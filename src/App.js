@@ -2,28 +2,20 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+    <div className="App"> 
+      <User first="Prateek" last="Bhardwaj"/>
+      <User first="Nehal" last="Lomror"/> 
+      <User first="Mahi" last="Rampaul"/> 
+
     </div>
   );
 }
 
-export default App;
+const User = (props) => {
+  return  <div>
+    <h1> {props.first} </h1>
+    <h2> {props.last}</h2>
+  </div>;
+};
+
+export default App; 
